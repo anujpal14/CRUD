@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CRUD Table UI</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CRUD Table</h1>
+        <table>
+            <tr>
+                <th>BookID</th>
+                <th>AuthorName</th>
+                <th>Price of book</th>
+                <th>Published year</th>
+                <th>IsActive</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td><input type="text" id="BookID"></td>
+                <td><input type="text" id="AuthorName"></td>
+                <td><input type="text" id="Price"></td>
+                <td><input type="text" id="Published"></td>
+                <td><input type="text" id="IsActive"></td>
+                <td>
+                    <button onclick="createItem()">Create</button>
+                </td>
+            </tr>
+        </table>
+        <table id="dataTable">
+            <!-- Data will be inserted here dynamically -->
+        </table>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
